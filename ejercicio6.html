@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo Ejercicio 6</title>
+    <script>
+        let numero = parseInt(prompt("Ingrese un numero entero"));
+        let serieFibonacci = [];
+        let a = 0, b = 1, c = 0;
+        let contador = 0;
+        while (contador < numero) {
+            serieFibonacci.push(a);
+            c = b;
+            b = a + b;
+            a = c;
+            contador++;
+        }
+        document.write("<p>La serie generada es: </p>" + "<p>" + serieFibonacci + "</p>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos Ejercicio 10</title>
+    <script>
+        let ahorro = 0;
+        let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        meses.forEach(function(mes) {
+            ahorro += parseFloat(prompt("Ingrese la cantidad que ahorro el mes de " + mes));
+            document.write("<p>Hasta el mes de " + mes + " lleva ahorrado " + ahorro + "</p>");
+        });
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
