@@ -7,9 +7,9 @@
     <script>
         let ahorro = 0;
         let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-        meses.forEach(function(mes) {
-            ahorro += parseFloat(prompt("Ingrese la cantidad que ahorro el mes de " + mes));
-            document.write("<p>Hasta el mes de " + mes + " lleva ahorrado " + ahorro + "</p>");
+        meses.forEach((mes) => {
+            ahorro += +prompt("Ingrese la cantidad que ahorro el mes de " + mes);
+            document.write(`<p>Hasta el mes de ${mes} lleva ahorrado ${ahorro}</p>`);
         });
         
     </script>
